@@ -13,7 +13,7 @@ module.exports = {
   extends: [
     '@nuxtjs',
     'plugin:nuxt/recommended',
-    'airbnb.base',
+    'airbnb-base',
   ],
   plugins: [
     'vue',
