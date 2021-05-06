@@ -7,6 +7,7 @@ export default {
     title: 'ria_demo',
     htmlAttrs: {
       lang: 'en',
+      class: 'has-navbar-fixed-top',
     },
     meta: [
       { charset: 'utf-8' },
@@ -16,6 +17,10 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
     ],
+  },
+  // Router Definition
+  router: {
+    linkActiveClass: 'is-active',
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
