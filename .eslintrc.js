@@ -21,5 +21,6 @@ module.exports = {
   // add your custom rules here
   rules: {
     'max-len': 0,
-  }
-}
+    'no-plusplus': 0,
+  },
+};
