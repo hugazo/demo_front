@@ -99,9 +99,7 @@ export default {
 };
 </script>
 
-<styles>
-  .fix-height {
-    height: 600px;
-    width: 100%;
-  }
+<styles lang="sass">
+  .fix-height
+    height: 600px
 </styles>
