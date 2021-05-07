@@ -2,7 +2,7 @@
   div
     nav.navbar.is-fixed-top.is-link
       .navbar-brand
-        a.navbar-item.is-capitalized
+        NuxtLink.navbar-item.is-capitalized(to="/")
           | Demo Web
       .navbar-menu
         .navbar-end

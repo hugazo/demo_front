@@ -20,11 +20,12 @@
         .field
           p(v-if="!selected_currency")
             | Please select a currency
-          Chart(
-            v-else
-            :chartdata="chartdata"
-            :options="{}"
-            )
+          .level(v-else)
+            .level-item.fix-height
+              Chart(
+                :chartdata="chartdata"
+                :options="chartoptions"
+                )
       .card-footer
         p.card-footer-item
           | 2021 - Hugo Morales Demo
@@ -43,6 +44,7 @@ export default {
       selected_currency: false,
       conversions: [],
       dates: [],
+      chartoptions: {},
     };
   },
   computed: {
@@ -96,3 +98,10 @@ export default {
   },
 };
 </script>
+
+<styles>
+  .fix-height {
+    height: 600px;
+    width: 100%;
+  }
+</styles>
